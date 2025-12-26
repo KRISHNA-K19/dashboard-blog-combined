@@ -2,12 +2,15 @@
   "name": "dashboard-blog-combined",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://KRISHNA-K19.github.io/dashboard-blog-combined",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .js,.jsx",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
@@ -30,6 +33,7 @@
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react": "^7.37.5",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.0",
     "prettier": "^3.7.4",
     "tailwindcss": "^3.4.8",
