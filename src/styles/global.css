@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --page-max-width: 1200px;
+  --brand: #0f766e;
+  --accent: #fb923c;
+  --muted: #6b7280;
+  --bg: #f8fafc;
+  --card-bg: #ffffff;
+}
+
+.dark {
+  --bg: #0b1220;
+  --card-bg: #0b1226;
+}
+
+.card { background-color: var(--card-bg); border-radius: 0.75rem; box-shadow: 0 4px 12px rgba(2,6,23,0.06); border: 1px solid rgba(15,23,42,0.04); transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms cubic-bezier(.2,.9,.2,1); }
+.card:hover { transform: translateY(-6px) scale(1.01); box-shadow: 0 10px 30px rgba(2,6,23,0.12) }
+
+.btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.75rem; border-radius: 0.5rem; transition: transform 160ms cubic-bezier(.2,.9,.2,1); }
+.btn:active { transform: scale(0.97) }
+
+.badge-local { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.125rem 0.4rem; border-radius: 999px; font-size: 0.625rem }
+
+@keyframes slide-in { from { transform: translateX(-8px); opacity: 0 } to { transform: translateX(0); opacity: 1 } }
+.animate-slide-in { animation: slide-in 200ms ease-out }
