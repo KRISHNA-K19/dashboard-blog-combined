@@ -2,7 +2,8 @@
   "name": "dashboard-blog-combined",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://KRISHNA-K19.github.io/dashboard-blog-combined",
+  "homepage": "https://krishna-k19.github.io/dashboard-blog-combined",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -37,6 +38,6 @@
     "postcss": "^8.4.0",
     "prettier": "^3.7.4",
     "tailwindcss": "^3.4.8",
-    "vite": "^5.4.21"
+    "vite": "^7.3.0"
   }
 }
